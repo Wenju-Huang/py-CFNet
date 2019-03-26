@@ -53,7 +53,7 @@ def main():
                                                                      target_w, target_h, final_score_sz,
                                                                      image, templates_z, scores, start_frame)
                 lengths[idx], precisions[idx], precisions_auc[idx], ious[idx], success_auc[idx] = _compile_results(gt_, bboxes, evaluation.dist_threshold)
-
+                
                 print str(i) + ' -- ' + videos_list[i] + \
                 ' -- Precision: ' + "%.2f" % precisions[idx] + \
                 ' -- Precisions AUC: ' + "%.2f" % precisions_auc[idx] + \
@@ -61,7 +61,7 @@ def main():
                 ' -- Success AUC: ' + "%.2f" % success_auc[idx] + \
                 ' -- Speed: ' + "%.2f" % speed[idx] + ' --'
                 print
-
+                
 
         tot_frames = np.mean(lengths)
         mean_precision = np.mean(precisions)
@@ -183,6 +183,16 @@ def _init_video_OTB(env, evaluation, video):
     gt = np.genfromtxt(gt_file, delimiter=',')
     if(np.size(gt[0])!= 4):
         gt = np.genfromtxt(gt_file, delimiter=None)  #silp by spaces
+    if video.lower() == 'david':
+        frame_name_list = frame_name_list[299:]
+    if video.lower() == 'tiger1':
+        frame_name_list = frame_name_list[5:]
+    if video.lower() == 'blurcar1':
+        frame_name_list = frame_name_list[246:]
+    if video.lower() == 'blurcar3':
+        frame_name_list = frame_name_list[2:]
+    if video.lower() == 'blurcar4':
+        frame_name_list = frame_name_list[17:]
     n_frames = min(len(frame_name_list),len(gt))
     frame_name_list = frame_name_list[0:n_frames]
     gt = gt[0:n_frames]
