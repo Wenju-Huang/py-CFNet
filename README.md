@@ -1,5 +1,5 @@
 # py-CFNet
-Python (Tensorflow) implementation of [CFNet tracker](http://www.robots.ox.ac.uk/~luca/cfnet.html) .
+Python (Tensorflow) implementation of [CFNet tracker](http://www.robots.ox.ac.uk/~luca/cfnet.html)
 
 ## Settings things up with virtualenv
 1) Get virtualenv if you don't have it already
@@ -9,8 +9,8 @@ Python (Tensorflow) implementation of [CFNet tracker](http://www.robots.ox.ac.uk
 1) Activate the virtualenv
 `source ~/ve-tracking/bin/activate`
 1) Clone the repository
-`git clone https://github.com/torrvision/siamfc-tf.git`
-1) `cd siamfc-tf`
+`https://github.com/Wenju-Huang/py-CFNet.git`
+1) `cd py-CFNet`
 1) Install the required packages
 `sudo pip install -r requirements.txt`
 1) `mkdir pretrained data`
@@ -27,6 +27,8 @@ Python (Tensorflow) implementation of [CFNet tracker](http://www.robots.ox.ac.uk
 1) Call the main script (within an active virtualenv session)
 `python run_tracker_evaluation.py`
 
+## Results
+OTB2013  Precision (20 px): 73.83 --  Success AUC: 0.55 -- FPS: 42.97 FPS
 ## Acknowledgments
 Many parts of this code are adopted from the related works [siamfc-tf](https://github.com/torrvision/siamfc-tf)
 
