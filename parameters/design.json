@@ -1,0 +1,13 @@
+{
+	"join_method": "corrfilt",
+	"net": "cfnet-conv2_e80.mat",
+	"net_gray": "",
+	"windowing": "cosine_sum",
+	"exemplar_sz": 255,
+	"search_sz": 255,
+	"score_sz": 33,
+	"tot_stride": 4,
+	"context": 0.5,
+	"pad_with_image_mean": false,
+    "exemplar_corp_pad": 16
+}

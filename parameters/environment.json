@@ -1,0 +1,5 @@
+{
+	"root_dataset": "../../dist2T/wenju",
+	"root_pretrained": "pretrained",
+	"root_parameters": "parameters"
+}

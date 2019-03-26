@@ -1,0 +1,24 @@
+{
+	"conv1":{
+        "response_up": 8,
+        "window_influence": 0.2375,
+        "z_lr": 0.0058,
+        "scale_num": 3,
+        "scale_step": 1.0355,
+        "scale_penalty": 0.9825,
+        "scale_lr": 0.7,
+        "scale_min": 0.2,
+        "scale_max": 5
+    },
+    "conv2":{
+        "response_up": 8,
+        "window_influence": 0.2625,
+        "z_lr": 0.005,
+        "scale_num": 3,
+        "scale_step": 1.0575,
+        "scale_penalty": 0.9780,
+        "scale_lr": 0.52,
+        "scale_min": 0.2,
+        "scale_max": 5
+    }
+}
