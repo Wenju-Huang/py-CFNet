@@ -27,16 +27,6 @@ Python (Tensorflow) implementation of [CFNet tracker](http://www.robots.ox.ac.uk
 1) Call the main script (within an active virtualenv session)
 `python run_tracker_evaluation.py`
 
-## References
-If you find our work useful, please consider citing
+## Acknowledgments
+Many parts of this code are adopted from the related works [siamfc-tf](https://github.com/torrvision/siamfc-tf)
 
-↓ [Original method] ↓
-```
-@inproceedings{bertinetto2016fully,
-  title={Fully-Convolutional Siamese Networks for Object Tracking},
-  author={Bertinetto, Luca and Valmadre, Jack and Henriques, Jo{\~a}o F and Vedaldi, Andrea and Torr, Philip H S},
-  booktitle={ECCV 2016 Workshops},
-  pages={850--865},
-  year={2016}
-}
-```
