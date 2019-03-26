@@ -28,7 +28,7 @@ Python (Tensorflow) implementation of [CFNet tracker](http://www.robots.ox.ac.uk
 `python run_tracker_evaluation.py`
 
 ## Results
-cfnet-conv2：OTB2013 -- Precision (20 px): 73.83 --  Success AUC: 0.55 -- FPS: 42.97 FPS
+CFNetet-Conv2--OTB2013: Precision (20 px): 73.83 --  Success AUC: 0.55 -- FPS: 42.97 FPS
 ## Acknowledgments
 Many parts of this code are adopted from the related works [siamfc-tf](https://github.com/torrvision/siamfc-tf)
 
